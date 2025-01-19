@@ -8,7 +8,10 @@
  */
 namespace xdsp::decibel {
 
-constexpr double DB_REF = 1.0;  // Reference for all decibel conversions
+/**
+ * @brief Reference value for all decibel conversions.
+ */
+constexpr double DB_REF = 1.0;
 
 /**
  * @brief Converts decibel (relative to 1.0) value to linear gain factor.

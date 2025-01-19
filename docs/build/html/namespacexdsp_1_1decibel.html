@@ -142,6 +142,7 @@ Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:a5bbb0f0e1dc8c9bfbf85d3b5087713a1" id="r_a5bbb0f0e1dc8c9bfbf85d3b5087713a1"><td class="memItemLeft" align="right" valign="top">constexpr double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bbb0f0e1dc8c9bfbf85d3b5087713a1">DB_REF</a> = 1.0</td></tr>
+<tr class="memdesc:a5bbb0f0e1dc8c9bfbf85d3b5087713a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference value for all decibel conversions.  <br /></td></tr>
 <tr class="separator:a5bbb0f0e1dc8c9bfbf85d3b5087713a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -184,9 +185,9 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Amplified or attenuated signal </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00073">73</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>{ <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#aebb2f40aef9056ad945bd7928429ca2b">to_linear</a>(gain); }</div>
-<div class="ttc" id="anamespacexdsp_1_1decibel_html_aebb2f40aef9056ad945bd7928429ca2b"><div class="ttname"><a href="#aebb2f40aef9056ad945bd7928429ca2b">xdsp::decibel::to_linear</a></div><div class="ttdeci">double to_linear(double db)</div><div class="ttdoc">Converts decibel (relative to 1.0) value to linear gain factor.</div><div class="ttdef"><b>Definition</b> <a href="decibel_8h_source.html#l00019">decibel.h:19</a></div></div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00076">76</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>{ <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#aebb2f40aef9056ad945bd7928429ca2b">to_linear</a>(gain); }</div>
+<div class="ttc" id="anamespacexdsp_1_1decibel_html_aebb2f40aef9056ad945bd7928429ca2b"><div class="ttname"><a href="#aebb2f40aef9056ad945bd7928429ca2b">xdsp::decibel::to_linear</a></div><div class="ttdeci">double to_linear(double db)</div><div class="ttdoc">Converts decibel (relative to 1.0) value to linear gain factor.</div><div class="ttdef"><b>Definition</b> <a href="decibel_8h_source.html#l00022">decibel.h:22</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -227,8 +228,8 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Amplified or attenuated signal    </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00078">78</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>{ <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#aebb2f40aef9056ad945bd7928429ca2b">to_linear</a>(gain); }</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00081">81</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   81</span>{ <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#aebb2f40aef9056ad945bd7928429ca2b">to_linear</a>(gain); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -266,11 +267,11 @@ Variables</h2></td></tr>
 
 <p></p>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00096">96</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   96</span>                                                           {</div>
-<div class="line"><span class="lineno">   97</span>  <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#a4ad69882fb15203ae5a3086e9c845b0a">to_linear_off</a>(gain, threshold);</div>
-<div class="line"><span class="lineno">   98</span>}</div>
-<div class="ttc" id="anamespacexdsp_1_1decibel_html_a4ad69882fb15203ae5a3086e9c845b0a"><div class="ttname"><a href="#a4ad69882fb15203ae5a3086e9c845b0a">xdsp::decibel::to_linear_off</a></div><div class="ttdeci">double to_linear_off(double db, double threshold)</div><div class="ttdoc">Converts decibel (relative to 1.0) value to linear gain factor.  If value is below given threshold,...</div><div class="ttdef"><b>Definition</b> <a href="decibel_8h_source.html#l00034">decibel.h:34</a></div></div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00099">99</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>                                                           {</div>
+<div class="line"><span class="lineno">  100</span>  <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#a4ad69882fb15203ae5a3086e9c845b0a">to_linear_off</a>(gain, threshold);</div>
+<div class="line"><span class="lineno">  101</span>}</div>
+<div class="ttc" id="anamespacexdsp_1_1decibel_html_a4ad69882fb15203ae5a3086e9c845b0a"><div class="ttname"><a href="#a4ad69882fb15203ae5a3086e9c845b0a">xdsp::decibel::to_linear_off</a></div><div class="ttdeci">double to_linear_off(double db, double threshold)</div><div class="ttdoc">Converts decibel (relative to 1.0) value to linear gain factor.  If value is below given threshold,...</div><div class="ttdef"><b>Definition</b> <a href="decibel_8h_source.html#l00037">decibel.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -317,10 +318,10 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Amplified or attenuated signal. Zero if gain is below threshold. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00089">89</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                                   {</div>
-<div class="line"><span class="lineno">   90</span>  <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#a4ad69882fb15203ae5a3086e9c845b0a">to_linear_off</a>(gain, threshold);</div>
-<div class="line"><span class="lineno">   91</span>}</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00092">92</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   92</span>                                                                   {</div>
+<div class="line"><span class="lineno">   93</span>  <span class="keywordflow">return</span> lin * <a class="code hl_function" href="#a4ad69882fb15203ae5a3086e9c845b0a">to_linear_off</a>(gain, threshold);</div>
+<div class="line"><span class="lineno">   94</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -356,8 +357,8 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>[dB] Decibel value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00059">59</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>{ <span class="keywordflow">return</span> 20.0 * log10(linear); }</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00062">62</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   62</span>{ <span class="keywordflow">return</span> 20.0 * log10(linear); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -386,8 +387,8 @@ Variables</h2></td></tr>
 
 <p></p>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00064">64</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>{ <span class="keywordflow">return</span> 20.0f * log10f(linear); }</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00067">67</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   67</span>{ <span class="keywordflow">return</span> 20.0f * log10f(linear); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -423,8 +424,8 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear gain factor </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00019">19</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>{ <span class="keywordflow">return</span> pow(10.0, db / 20.0); }</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00022">22</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>{ <span class="keywordflow">return</span> pow(10.0, db / 20.0); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -460,8 +461,8 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear gain factor    </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00024">24</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>{ <span class="keywordflow">return</span> powf(10.0f, db / 20.0f); }</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00027">27</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> powf(10.0f, db / 20.0f); }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -503,14 +504,14 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear gain factor </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00034">34</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                         {</div>
-<div class="line"><span class="lineno">   35</span>  <span class="keywordflow">if</span> (db &lt;= threshold) {</div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> 0.0;</div>
-<div class="line"><span class="lineno">   37</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">return</span> to_linear(db);</div>
-<div class="line"><span class="lineno">   39</span>  }</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00037">37</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                                         {</div>
+<div class="line"><span class="lineno">   38</span>  <span class="keywordflow">if</span> (db &lt;= threshold) {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> 0.0;</div>
+<div class="line"><span class="lineno">   40</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> to_linear(db);</div>
+<div class="line"><span class="lineno">   42</span>  }</div>
+<div class="line"><span class="lineno">   43</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -552,14 +553,14 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Linear gain factor    </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00045">45</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                       {</div>
-<div class="line"><span class="lineno">   46</span>  <span class="keywordflow">if</span> (db &lt;= threshold) {</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span> 0.0f;</div>
-<div class="line"><span class="lineno">   48</span>  } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> to_linear(db);</div>
-<div class="line"><span class="lineno">   50</span>  }</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00048">48</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                       {</div>
+<div class="line"><span class="lineno">   49</span>  <span class="keywordflow">if</span> (db &lt;= threshold) {</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">return</span> 0.0f;</div>
+<div class="line"><span class="lineno">   51</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> to_linear(db);</div>
+<div class="line"><span class="lineno">   53</span>  }</div>
+<div class="line"><span class="lineno">   54</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -584,7 +585,9 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00011">11</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
+<p>Reference value for all decibel conversions. </p>
+
+<p class="definition">Definition at line <a class="el" href="decibel_8h_source.html#l00014">14</a> of file <a class="el" href="decibel_8h_source.html">decibel.h</a>.</p>
 
 </div>
 </div>
