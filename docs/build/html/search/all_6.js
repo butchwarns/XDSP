@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['init_0',['init',['../classxdsp_1_1_circular_buffer.html#aec6fcd6930bd8ba64717922ceadd3a2f',1,'xdsp::CircularBuffer']]]
+  ['pi_0',['PI',['../namespacexdsp_1_1consts.html#a3f44b50eb4c8a4b3bbe411c418733a71',1,'xdsp::consts']]]
 ];

@@ -97,7 +97,7 @@ $(function(){ initResizable(false); });
 <div id="doc-content">
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
+<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle"><div class="title">xdsp::noise Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -105,66 +105,15 @@ $(function(){ initResizable(false); });
 <p>Noise sources.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a76efb3aa794198155f04fc8dd53b0b4d" id="r_a76efb3aa794198155f04fc8dd53b0b4d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a76efb3aa794198155f04fc8dd53b0b4d">white</a> ()</td></tr>
-<tr class="memdesc:a76efb3aa794198155f04fc8dd53b0b4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates white noise.<br  />
-This generates one sample of white noise at full scale (maximum amplitude 1.0).  <br /></td></tr>
-<tr class="separator:a76efb3aa794198155f04fc8dd53b0b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classxdsp_1_1noise_1_1_linear_congruential_generator.html">LinearCongruentialGenerator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">White noise soruce using linear congruential generator (LCG)  <a href="classxdsp_1_1noise_1_1_linear_congruential_generator.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Noise sources. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
-<a id="a76efb3aa794198155f04fc8dd53b0b4d" name="a76efb3aa794198155f04fc8dd53b0b4d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76efb3aa794198155f04fc8dd53b0b4d">&#9670;&#160;</a></span>white()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double xdsp::noise::white </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Creates white noise.<br  />
-This generates one sample of white noise at full scale (maximum amplitude 1.0). </p>
-<dl class="section return"><dt>Returns</dt><dd>White noise sample </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="noise_8h_source.html#l00021">21</a> of file <a class="el" href="noise_8h_source.html">noise.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                      {</div>
-<div class="line"><span class="lineno">   22</span>  <span class="keywordtype">double</span> noise = 0.0;</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span><span class="preprocessor">#if defined _WINDOWS || defined _WINDLL</span></div>
-<div class="line"><span class="lineno">   25</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> RAND_MAX = 32767.0;  <span class="comment">// (2^15 - 1)</span></div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>  noise = (double)rand();</div>
-<div class="line"><span class="lineno">   28</span>  noise = noise / RAND_MAX noise = maps::unipolar_to_bipolar(noise);</div>
-<div class="line"><span class="lineno">   29</span><span class="preprocessor">#else</span></div>
-<div class="line"><span class="lineno">   30</span>  <span class="keyword">const</span> <span class="keywordtype">double</span> ARC4RANDOM_MAX = 4294967295.0;  <span class="comment">// (2^32 - 1)</span></div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>  noise = (double)arc4random();</div>
-<div class="line"><span class="lineno">   33</span>  noise = noise / ARC4RANDOM_MAX;</div>
-<div class="line"><span class="lineno">   34</span>  noise = lerp::to_bipolar(noise);</div>
-<div class="line"><span class="lineno">   35</span><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>  <span class="keywordflow">return</span> noise;</div>
-<div class="line"><span class="lineno">   38</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
-</div><!-- contents -->
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0

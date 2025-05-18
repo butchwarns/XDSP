@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['circularbuffer_0',['CircularBuffer',['../classxdsp_1_1_circular_buffer.html#abd1e302f9840b44cece3d7fb847e92ba',1,'xdsp::CircularBuffer']]],
-  ['clamp_1',['clamp',['../namespacexdsp_1_1util.html#aebf4f668b40b389fd7ed11c78b80750a',1,'xdsp::util']]],
-  ['clear_2',['clear',['../classxdsp_1_1_circular_buffer.html#a78cc802de9b4a2f9e8695d8480452cef',1,'xdsp::CircularBuffer']]]
+  ['lerp_0',['lerp',['../namespacexdsp_1_1scaling.html#a923193e66b0daea31e3cd257a4ea54b5',1,'xdsp::scaling']]],
+  ['lerp_5fbipolar_1',['lerp_bipolar',['../namespacexdsp_1_1scaling.html#ad159d048404a18a2fb082ef034476a50',1,'xdsp::scaling']]],
+  ['lerp_5funipolar_2',['lerp_unipolar',['../namespacexdsp_1_1scaling.html#ae24d7b61ea046fddc87ec3bccd2b86ae',1,'xdsp::scaling']]],
+  ['linearcongruentialgenerator_3',['LinearCongruentialGenerator',['../classxdsp_1_1noise_1_1_linear_congruential_generator.html#a72ca88f9b12c41585df871c57fc96274',1,'xdsp::noise::LinearCongruentialGenerator']]]
 ];
