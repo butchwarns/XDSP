@@ -4,7 +4,7 @@
 #include <cmath>
 
 /**
- * @brief Mathematical and other DSP-related constants.
+ * @brief Mathematical and other DSP-related constants
  */
 namespace xdsp::consts {
 
