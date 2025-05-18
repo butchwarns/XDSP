@@ -5,8 +5,7 @@ project(XDSP VERSION 0.1 DESCRIPTION "Audio signal processing and synthesis libr
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-# Add source and header files
-file(GLOB_RECURSE SOURCES "src/*.cc")
+file(GLOB_RECURSE SOURCES "src/*.cpp")
 
 add_library(XDSP STATIC ${SOURCES})
 target_include_directories(XDSP PUBLIC src)
