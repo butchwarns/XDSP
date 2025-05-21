@@ -28,7 +28,7 @@ class LinearCongruentialGenerator {
    *
    * @return double Noise sample in range [-1.0, 1.0]
    */
-  double get_sample();
+  double process();
 
  private:
   /**

@@ -12,7 +12,7 @@ TEST(Noise, LinearCongruentialGenerator) {
   double sum = 0.0;
 
   for (int i = 0; i < NUM_SAMPLES; ++i) {
-    auto x = noise.get_sample();
+    auto x = noise.process();
     sum += x;
 
     EXPECT_TRUE(x >= -1.0);

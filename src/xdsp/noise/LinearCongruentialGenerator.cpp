@@ -9,7 +9,7 @@ namespace xdsp::noise {
 LinearCongruentialGenerator::LinearCongruentialGenerator(uint32_t seed)
     : state(seed) {}
 
-double LinearCongruentialGenerator::get_sample() {
+double LinearCongruentialGenerator::process() {
   {
     state = state * 196314165 + 907633515;
 
