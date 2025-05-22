@@ -115,6 +115,30 @@ inline T to_unipolar(T bipolar) {
                  static_cast<T>(0.0), static_cast<T>(1.0));
 }
 
+/**
+ * @brief Skew the unit interval
+ *
+ * skew = 1.0 gives a linear map
+ * skew in [0.0, 1.0[ gives more resolution in the lower range
+ * skew in [1.0, INF[ gives more resolution in the upper range
+ *
+ * @param val_norm Value in [0.0, 1.0]
+ * @param skew Skew factor
+ * @return Skewed value in [0.0, 1.0]
+ */
+template <typename T>
+inline T skew(T val_norm, T skew);
+
+template <>
+inline double skew(double val, double skew) {
+  return pow(val, 1.0 / skew);
+}
+
+template <>
+inline float skew(float val, float skew) {
+  return powf(val, 1.0f / skew);
+}
+
 }  // namespace xdsp::scaling
 
 #endif  // LERP_H
