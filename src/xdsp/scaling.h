@@ -122,12 +122,14 @@ inline T to_unipolar(T bipolar) {
  * skew in [0.0, 1.0[ gives more resolution in the lower range
  * skew in [1.0, INF[ gives more resolution in the upper range
  *
+ * @tparam FloatType (float or double)
  * @param val_norm Value in [0.0, 1.0]
  * @param skew Skew factor
  * @return Skewed value in [0.0, 1.0]
  */
-template <typename T>
-inline T skew(T val_norm, T skew);
+
+template <typename FloatType>
+inline FloatType skew(FloatType val_norm, FloatType skew);
 
 template <>
 inline double skew(double val, double skew) {
