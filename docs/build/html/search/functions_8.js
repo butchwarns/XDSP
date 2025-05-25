@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['normalize_5fbipolar_0',['normalize_bipolar',['../namespacexdsp_1_1lerp.html#ae5f23c688d0205caf1f596a04b5d2e10',1,'xdsp::lerp']]],
-  ['normalize_5funipolar_1',['normalize_unipolar',['../namespacexdsp_1_1lerp.html#a379529fd27ad39f5ba35ea0e83e73677',1,'xdsp::lerp']]]
+  ['_7evoltperoct_0',['~VoltPerOct',['../classxdsp_1_1cv_1_1_volt_per_oct.html#aa57dd85df5a5341955289f99d0f9ab1a',1,'xdsp::cv::VoltPerOct']]]
 ];

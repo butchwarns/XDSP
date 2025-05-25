@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a72ca88f9b12c41585df871c57fc96274" id="r_a72ca88f9b12c41585df871c57fc96274"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a72ca88f9b12c41585df871c57fc96274">LinearCongruentialGenerator</a> (uint32_t seed=1234567)</td></tr>
 <tr class="memdesc:a72ca88f9b12c41585df871c57fc96274"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct new seeded source.  <br /></td></tr>
 <tr class="separator:a72ca88f9b12c41585df871c57fc96274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff46bb775ed01da6add2f9465b0821e8" id="r_aff46bb775ed01da6add2f9465b0821e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff46bb775ed01da6add2f9465b0821e8">get_sample</a> ()</td></tr>
-<tr class="memdesc:aff46bb775ed01da6add2f9465b0821e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate one sample of white noise.  <br /></td></tr>
-<tr class="separator:aff46bb775ed01da6add2f9465b0821e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e655e46c71250f2ac98ebeeb7ab394" id="r_a80e655e46c71250f2ac98ebeeb7ab394"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a80e655e46c71250f2ac98ebeeb7ab394">process</a> ()</td></tr>
+<tr class="memdesc:a80e655e46c71250f2ac98ebeeb7ab394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate one sample of white noise.  <br /></td></tr>
+<tr class="separator:a80e655e46c71250f2ac98ebeeb7ab394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>White noise soruce using linear congruential generator (LCG) </p>
@@ -160,14 +160,14 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aff46bb775ed01da6add2f9465b0821e8" name="aff46bb775ed01da6add2f9465b0821e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff46bb775ed01da6add2f9465b0821e8">&#9670;&#160;</a></span>get_sample()</h2>
+<a id="a80e655e46c71250f2ac98ebeeb7ab394" name="a80e655e46c71250f2ac98ebeeb7ab394"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80e655e46c71250f2ac98ebeeb7ab394">&#9670;&#160;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double xdsp::noise::LinearCongruentialGenerator::get_sample </td>
+          <td class="memname">double xdsp::noise::LinearCongruentialGenerator::process </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -179,7 +179,7 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>double Noise sample in range [-1.0, 1.0] </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_linear_congruential_generator_8cpp_source.html#l00012">12</a> of file <a class="el" href="_linear_congruential_generator_8cpp_source.html">LinearCongruentialGenerator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>                                               {</div>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                                            {</div>
 <div class="line"><span class="lineno">   13</span>  {</div>
 <div class="line"><span class="lineno">   14</span>    state = state * 196314165 + 907633515;</div>
 <div class="line"><span class="lineno">   15</span> </div>

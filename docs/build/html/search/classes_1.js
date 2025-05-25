@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['circularbuffer_0',['CircularBuffer',['../classxdsp_1_1_circular_buffer.html',1,'xdsp']]]
+  ['oscbasic_0',['OscBasic',['../classxdsp_1_1oscillator_1_1_osc_basic.html',1,'xdsp::oscillator']]]
 ];

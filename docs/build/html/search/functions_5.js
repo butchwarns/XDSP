@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['fix_5funderflow_0',['fix_underflow',['../namespacexdsp_1_1util.html#a4d06542cc329090eb97cc99ed50d553d',1,'xdsp::util']]]
+  ['set_5ffreq_0',['set_freq',['../classxdsp_1_1oscillator_1_1_osc_basic.html#a7716b0e6fcb35091736be29d1bdbf27c',1,'xdsp::oscillator::OscBasic']]],
+  ['skew_1',['skew',['../namespacexdsp_1_1scaling.html#af66bb7d55c306e1eae3355391d9b45e1',1,'xdsp::scaling']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['sqrt_5f2_0',['SQRT_2',['../namespacexdsp_1_1consts.html#ab0cae74b7e275e1dfa5948ba215e0440',1,'xdsp::consts']]]
+  ['pi_0',['PI',['../namespacexdsp_1_1consts.html#a3f44b50eb4c8a4b3bbe411c418733a71',1,'xdsp::consts']]],
+  ['process_1',['process',['../classxdsp_1_1noise_1_1_linear_congruential_generator.html#a80e655e46c71250f2ac98ebeeb7ab394',1,'xdsp::noise::LinearCongruentialGenerator']]]
 ];

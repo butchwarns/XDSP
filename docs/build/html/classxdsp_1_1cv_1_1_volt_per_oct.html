@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.12.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XDSP: xdsp::cv::VoltPerOct&lt; T &gt; Class Template Reference</title>
+<title>XDSP: xdsp::cv::VoltPerOct&lt; FloatType &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -91,7 +91,7 @@ $(function(){ initResizable(false); });
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>xdsp</b></li><li class="navelem"><b>cv</b></li><li class="navelem"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">VoltPerOct</a></li>  </ul>
+<li class="navelem"><b>xdsp</b></li><li class="navelem"><a class="el" href="namespacexdsp_1_1cv.html">cv</a></li><li class="navelem"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">VoltPerOct</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -100,33 +100,36 @@ $(function(){ initResizable(false); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classxdsp_1_1cv_1_1_volt_per_oct-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">xdsp::cv::VoltPerOct&lt; T &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">xdsp::cv::VoltPerOct&lt; FloatType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Volt per octave conversion class.  
+<p>Volt-per-octave &lt;-&gt; frequency conversion class.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="_volt_per_oct_8h_source.html">VoltPerOct.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25dc9859188f9b8a27e62a385d93a189" id="r_a25dc9859188f9b8a27e62a385d93a189"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a25dc9859188f9b8a27e62a385d93a189">VoltPerOct</a> ()</td></tr>
-<tr class="memdesc:a25dc9859188f9b8a27e62a385d93a189"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with default tuning.<br  />
-See ZERO_VOLT_FREQ_DEFAULT.  <br /></td></tr>
-<tr class="separator:a25dc9859188f9b8a27e62a385d93a189"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9cd158dc77ae7a07cc53090202941103" id="r_a9cd158dc77ae7a07cc53090202941103"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd158dc77ae7a07cc53090202941103">VoltPerOct</a> (T _freq_zero_volt)</td></tr>
-<tr class="memdesc:a9cd158dc77ae7a07cc53090202941103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with custom tuning.  <br /></td></tr>
-<tr class="separator:a9cd158dc77ae7a07cc53090202941103"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2189d716314728c9c9dbcd73fbbdc00" id="r_af2189d716314728c9c9dbcd73fbbdc00"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af2189d716314728c9c9dbcd73fbbdc00">tune</a> (T _freq_zero_volt)</td></tr>
-<tr class="memdesc:af2189d716314728c9c9dbcd73fbbdc00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set zero-volt-frequency.  <br /></td></tr>
-<tr class="separator:af2189d716314728c9c9dbcd73fbbdc00"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acddf1ceb990e061e0960a57b2f15e2fd" id="r_acddf1ceb990e061e0960a57b2f15e2fd"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acddf1ceb990e061e0960a57b2f15e2fd">to_freq</a> (T volt) const</td></tr>
-<tr class="memdesc:acddf1ceb990e061e0960a57b2f15e2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert voltage to frequency, as tuned.  <br /></td></tr>
-<tr class="separator:acddf1ceb990e061e0960a57b2f15e2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac61766dd8f92ea57357cea101b87599f" id="r_ac61766dd8f92ea57357cea101b87599f"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac61766dd8f92ea57357cea101b87599f">to_volt</a> (T freq) const</td></tr>
-<tr class="memdesc:ac61766dd8f92ea57357cea101b87599f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to voltage as tuned.  <br /></td></tr>
-<tr class="separator:ac61766dd8f92ea57357cea101b87599f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71664dbe3b796b942ab18531d4462bd8" id="r_a71664dbe3b796b942ab18531d4462bd8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a71664dbe3b796b942ab18531d4462bd8">VoltPerOct</a> ()</td></tr>
+<tr class="memdesc:a71664dbe3b796b942ab18531d4462bd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with default tuning.  <br /></td></tr>
+<tr class="separator:a71664dbe3b796b942ab18531d4462bd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace668c557b8f0adeeee9c9fad292cb41" id="r_ace668c557b8f0adeeee9c9fad292cb41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace668c557b8f0adeeee9c9fad292cb41">VoltPerOct</a> (FloatType _freq_zero_volt)</td></tr>
+<tr class="memdesc:ace668c557b8f0adeeee9c9fad292cb41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct with specified tuning.  <br /></td></tr>
+<tr class="separator:ace668c557b8f0adeeee9c9fad292cb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57dd85df5a5341955289f99d0f9ab1a" id="r_aa57dd85df5a5341955289f99d0f9ab1a"><td class="memItemLeft" align="right" valign="top"><a id="aa57dd85df5a5341955289f99d0f9ab1a" name="aa57dd85df5a5341955289f99d0f9ab1a"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>~VoltPerOct</b> ()=default</td></tr>
+<tr class="memdesc:aa57dd85df5a5341955289f99d0f9ab1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor. <br /></td></tr>
+<tr class="separator:aa57dd85df5a5341955289f99d0f9ab1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98f45d8c055eb98a4c0c98afb81fb572" id="r_a98f45d8c055eb98a4c0c98afb81fb572"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98f45d8c055eb98a4c0c98afb81fb572">tune</a> (FloatType _freq_zero_volt)</td></tr>
+<tr class="memdesc:a98f45d8c055eb98a4c0c98afb81fb572"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tune the conversion.  <br /></td></tr>
+<tr class="separator:a98f45d8c055eb98a4c0c98afb81fb572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24717fc5f647b90bade893e5f41332c1" id="r_a24717fc5f647b90bade893e5f41332c1"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24717fc5f647b90bade893e5f41332c1">to_freq</a> (FloatType volt) const</td></tr>
+<tr class="memdesc:a24717fc5f647b90bade893e5f41332c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert control-voltage to frequency.  <br /></td></tr>
+<tr class="separator:a24717fc5f647b90bade893e5f41332c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5c28c00cfb727466b2db81b61d09db" id="r_aec5c28c00cfb727466b2db81b61d09db"><td class="memItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec5c28c00cfb727466b2db81b61d09db">to_volt</a> (FloatType freq) const</td></tr>
+<tr class="memdesc:aec5c28c00cfb727466b2db81b61d09db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to control-voltage.  <br /></td></tr>
+<tr class="separator:aec5c28c00cfb727466b2db81b61d09db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0bbca19de13dddc14af3778f7c7f556a" id="r_a0bbca19de13dddc14af3778f7c7f556a"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0bbca19de13dddc14af3778f7c7f556a">to_freq</a> (float volt) const</td></tr>
 <tr class="separator:a0bbca19de13dddc14af3778f7c7f556a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aba7acd69b93377dd5d7042ea82bc594e" id="r_aba7acd69b93377dd5d7042ea82bc594e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7acd69b93377dd5d7042ea82bc594e">to_freq</a> (double volt) const</td></tr>
@@ -146,41 +149,41 @@ See ZERO_VOLT_FREQ_DEFAULT.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a47c7df6ee017cd95eae93a727761765d" id="r_a47c7df6ee017cd95eae93a727761765d"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47c7df6ee017cd95eae93a727761765d">to_freq</a> (float volt, float freq_zero_volt)</td></tr>
-<tr class="memdesc:a47c7df6ee017cd95eae93a727761765d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert voltage to frequency with given tuning.  <br /></td></tr>
-<tr class="separator:a47c7df6ee017cd95eae93a727761765d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a822b9f3ed27f0887be4a99622cb685d0" id="r_a822b9f3ed27f0887be4a99622cb685d0"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a822b9f3ed27f0887be4a99622cb685d0">to_freq</a> (double volt, double freq_zero_volt)</td></tr>
-<tr class="memdesc:a822b9f3ed27f0887be4a99622cb685d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert voltage to frequency with given tuning.     <br /></td></tr>
-<tr class="separator:a822b9f3ed27f0887be4a99622cb685d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2f4a99179a0e8d24d7da2200c47884f" id="r_ac2f4a99179a0e8d24d7da2200c47884f"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac2f4a99179a0e8d24d7da2200c47884f">to_volt</a> (float freq, float freq_zero_volt)</td></tr>
-<tr class="memdesc:ac2f4a99179a0e8d24d7da2200c47884f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to control voltage.  <br /></td></tr>
-<tr class="separator:ac2f4a99179a0e8d24d7da2200c47884f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5030c4571045e0b59916557c2f77bf37" id="r_a5030c4571045e0b59916557c2f77bf37"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5030c4571045e0b59916557c2f77bf37">to_volt</a> (double freq, double freq_zero_volt)</td></tr>
-<tr class="memdesc:a5030c4571045e0b59916557c2f77bf37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to control voltage.     <br /></td></tr>
-<tr class="separator:a5030c4571045e0b59916557c2f77bf37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26d0985a532b962de0d74216f7306fde" id="r_a26d0985a532b962de0d74216f7306fde"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a26d0985a532b962de0d74216f7306fde">to_freq</a> (float volt, float freq_zero_volt)</td></tr>
+<tr class="memdesc:a26d0985a532b962de0d74216f7306fde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert control-voltage to frequency.  <br /></td></tr>
+<tr class="separator:a26d0985a532b962de0d74216f7306fde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10bb0f48ad553800211fabebb181c5fa" id="r_a10bb0f48ad553800211fabebb181c5fa"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10bb0f48ad553800211fabebb181c5fa">to_freq</a> (double volt, double freq_zero_volt)</td></tr>
+<tr class="memdesc:a10bb0f48ad553800211fabebb181c5fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert control-voltage to frequency.  <br /></td></tr>
+<tr class="separator:a10bb0f48ad553800211fabebb181c5fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fb1ff38849b9742eeff571414d5bbf" id="r_a28fb1ff38849b9742eeff571414d5bbf"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28fb1ff38849b9742eeff571414d5bbf">to_volt</a> (float freq, float freq_zero_volt)</td></tr>
+<tr class="memdesc:a28fb1ff38849b9742eeff571414d5bbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to control-voltage.  <br /></td></tr>
+<tr class="separator:a28fb1ff38849b9742eeff571414d5bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e3167543aad65c2409b4c7a9544bbd" id="r_ac5e3167543aad65c2409b4c7a9544bbd"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5e3167543aad65c2409b4c7a9544bbd">to_volt</a> (double freq, double freq_zero_volt)</td></tr>
+<tr class="memdesc:ac5e3167543aad65c2409b4c7a9544bbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert frequency to control-voltage.  <br /></td></tr>
+<tr class="separator:ac5e3167543aad65c2409b4c7a9544bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;typename T&gt;<br />
-class xdsp::cv::VoltPerOct&lt; T &gt;</div><p>Volt per octave conversion class. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename FloatType&gt;<br />
+class xdsp::cv::VoltPerOct&lt; FloatType &gt;</div><p>Volt-per-octave &lt;-&gt; frequency conversion class. </p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Single or double precision floating-point type </td></tr>
+    <tr><td class="paramname">FloatType</td><td>Floating-point type (float or double) </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8h_source.html#l00019">19</a> of file <a class="el" href="_volt_per_oct_8h_source.html">VoltPerOct.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8h_source.html#l00025">25</a> of file <a class="el" href="_volt_per_oct_8h_source.html">VoltPerOct.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a25dc9859188f9b8a27e62a385d93a189" name="a25dc9859188f9b8a27e62a385d93a189"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25dc9859188f9b8a27e62a385d93a189">&#9670;&#160;</a></span>VoltPerOct() <span class="overload">[1/2]</span></h2>
+<a id="a71664dbe3b796b942ab18531d4462bd8" name="a71664dbe3b796b942ab18531d4462bd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71664dbe3b796b942ab18531d4462bd8">&#9670;&#160;</a></span>VoltPerOct() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::VoltPerOct </td>
+          <td class="memname"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::VoltPerOct </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
           <td></td>
@@ -188,29 +191,29 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Construct with default tuning.<br  />
-See ZERO_VOLT_FREQ_DEFAULT. </p>
+<p>Construct with default tuning. </p>
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00006">6</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    6</span>: freq_zero_volt((T)ZERO_VOLT_FREQ_DEFAULT) {}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00006">6</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>    : freq_zero_volt((FloatType)<a class="code hl_variable" href="namespacexdsp_1_1cv.html#ab8d1921594e580f8b7dfec5672bd6967">FREQ_ZERO_VOLT_DEFAULT</a>) {}</div>
+<div class="ttc" id="anamespacexdsp_1_1cv_html_ab8d1921594e580f8b7dfec5672bd6967"><div class="ttname"><a href="namespacexdsp_1_1cv.html#ab8d1921594e580f8b7dfec5672bd6967">xdsp::cv::FREQ_ZERO_VOLT_DEFAULT</a></div><div class="ttdeci">const double FREQ_ZERO_VOLT_DEFAULT</div><div class="ttdoc">Default tuning.</div><div class="ttdef"><b>Definition</b> <a href="_volt_per_oct_8h_source.html#l00017">VoltPerOct.h:17</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a9cd158dc77ae7a07cc53090202941103" name="a9cd158dc77ae7a07cc53090202941103"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cd158dc77ae7a07cc53090202941103">&#9670;&#160;</a></span>VoltPerOct() <span class="overload">[2/2]</span></h2>
+<a id="ace668c557b8f0adeeee9c9fad292cb41" name="ace668c557b8f0adeeee9c9fad292cb41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace668c557b8f0adeeee9c9fad292cb41">&#9670;&#160;</a></span>VoltPerOct() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::VoltPerOct </td>
+          <td class="memname"><a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::VoltPerOct </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>_freq_zero_volt</em></span></td><td>)</td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>_freq_zero_volt</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -221,16 +224,16 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Construct with custom tuning. </p>
+<p>Construct with specified tuning. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">_freq_zero_volt</td><td></td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00009">9</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>    : freq_zero_volt(_freq_zero_volt) {}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00010">10</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   11</span>    : freq_zero_volt(_freq_zero_volt) {}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -250,10 +253,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00023">23</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                    {</div>
-<div class="line"><span class="lineno">   24</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
-<div class="line"><span class="lineno">   25</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00024">24</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                    {</div>
+<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -276,26 +279,26 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00043">43</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                                                                     {</div>
-<div class="line"><span class="lineno">   44</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
-<div class="line"><span class="lineno">   45</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00044">44</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                                     {</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a822b9f3ed27f0887be4a99622cb685d0" name="a822b9f3ed27f0887be4a99622cb685d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a822b9f3ed27f0887be4a99622cb685d0">&#9670;&#160;</a></span>to_freq() <span class="overload">[3/7]</span></h2>
+<a id="a10bb0f48ad553800211fabebb181c5fa" name="a10bb0f48ad553800211fabebb181c5fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10bb0f48ad553800211fabebb181c5fa">&#9670;&#160;</a></span>to_freq() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_freq </td>
+          <td class="memname">static double <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_freq </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>volt</em></span>, </td>
         </tr>
@@ -312,15 +315,15 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Convert voltage to frequency with given tuning.    </p>
+<p>Convert control-voltage to frequency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volt</td><td>[V] Control voltage </td></tr>
-    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">volt</td><td>[V] Control-voltage </td></tr>
+    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Desired frequency at 0V </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[Hz] Frequency    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>double [Hz] Frequency </dd></dl>
 
 </div>
 </div>
@@ -339,10 +342,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00018">18</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                 {</div>
-<div class="line"><span class="lineno">   19</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00019">19</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                 {</div>
+<div class="line"><span class="lineno">   20</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
+<div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,26 +368,26 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00038">38</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   38</span>                                                                 {</div>
-<div class="line"><span class="lineno">   39</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
-<div class="line"><span class="lineno">   40</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00039">39</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                                 {</div>
+<div class="line"><span class="lineno">   40</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
+<div class="line"><span class="lineno">   41</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a47c7df6ee017cd95eae93a727761765d" name="a47c7df6ee017cd95eae93a727761765d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c7df6ee017cd95eae93a727761765d">&#9670;&#160;</a></span>to_freq() <span class="overload">[6/7]</span></h2>
+<a id="a26d0985a532b962de0d74216f7306fde" name="a26d0985a532b962de0d74216f7306fde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26d0985a532b962de0d74216f7306fde">&#9670;&#160;</a></span>to_freq() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_freq </td>
+          <td class="memname">static float <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_freq </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>volt</em></span>, </td>
         </tr>
@@ -401,43 +404,43 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Convert voltage to frequency with given tuning. </p>
+<p>Convert control-voltage to frequency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volt</td><td>[V] Control voltage </td></tr>
-    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">volt</td><td>[V] Control-voltage </td></tr>
+    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Desired frequency at 0V </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[Hz] Frequency </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>float [Hz] Frequency </dd></dl>
 
 </div>
 </div>
-<a id="acddf1ceb990e061e0960a57b2f15e2fd" name="acddf1ceb990e061e0960a57b2f15e2fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acddf1ceb990e061e0960a57b2f15e2fd">&#9670;&#160;</a></span>to_freq() <span class="overload">[7/7]</span></h2>
+<a id="a24717fc5f647b90bade893e5f41332c1" name="a24717fc5f647b90bade893e5f41332c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24717fc5f647b90bade893e5f41332c1">&#9670;&#160;</a></span>to_freq() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_freq </td>
+          <td class="memname">FloatType <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_freq </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>volt</em></span></td><td>)</td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>volt</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert voltage to frequency, as tuned. </p>
+<p>Convert control-voltage to frequency. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">volt</td><td>[V] Control voltage </td></tr>
+    <tr><td class="paramname">volt</td><td>[V] Control-voltage </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[Hz] Frequency </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>FloatType [Hz] Frequency </dd></dl>
 
 </div>
 </div>
@@ -456,10 +459,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00033">33</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                    {</div>
-<div class="line"><span class="lineno">   34</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
-<div class="line"><span class="lineno">   35</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00034">34</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   34</span>                                                    {</div>
+<div class="line"><span class="lineno">   35</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
+<div class="line"><span class="lineno">   36</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -482,26 +485,26 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00053">53</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                                     {</div>
-<div class="line"><span class="lineno">   54</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
-<div class="line"><span class="lineno">   55</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00054">54</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                                                                     {</div>
+<div class="line"><span class="lineno">   55</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
+<div class="line"><span class="lineno">   56</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="a5030c4571045e0b59916557c2f77bf37" name="a5030c4571045e0b59916557c2f77bf37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5030c4571045e0b59916557c2f77bf37">&#9670;&#160;</a></span>to_volt() <span class="overload">[3/7]</span></h2>
+<a id="ac5e3167543aad65c2409b4c7a9544bbd" name="ac5e3167543aad65c2409b4c7a9544bbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e3167543aad65c2409b4c7a9544bbd">&#9670;&#160;</a></span>to_volt() <span class="overload">[3/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static double <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_volt </td>
+          <td class="memname">static double <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_volt </td>
           <td>(</td>
           <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>freq</em></span>, </td>
         </tr>
@@ -518,15 +521,15 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Convert frequency to control voltage.    </p>
+<p>Convert frequency to control-voltage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>[Hz] Frequency </td></tr>
-    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Desired frequency at 0V </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[V] Control voltage    </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>double [V] Control-voltage </dd></dl>
 
 </div>
 </div>
@@ -545,10 +548,10 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00028">28</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   28</span>                                                 {</div>
-<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00029">29</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   29</span>                                                 {</div>
+<div class="line"><span class="lineno">   30</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -571,26 +574,26 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00048">48</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                                 {</div>
-<div class="line"><span class="lineno">   49</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00049">49</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                                 {</div>
+<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
+<div class="line"><span class="lineno">   51</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="ac2f4a99179a0e8d24d7da2200c47884f" name="ac2f4a99179a0e8d24d7da2200c47884f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f4a99179a0e8d24d7da2200c47884f">&#9670;&#160;</a></span>to_volt() <span class="overload">[6/7]</span></h2>
+<a id="a28fb1ff38849b9742eeff571414d5bbf" name="a28fb1ff38849b9742eeff571414d5bbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28fb1ff38849b9742eeff571414d5bbf">&#9670;&#160;</a></span>to_volt() <span class="overload">[6/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static float <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_volt </td>
+          <td class="memname">static float <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_volt </td>
           <td>(</td>
           <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>freq</em></span>, </td>
         </tr>
@@ -607,81 +610,81 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Convert frequency to control voltage. </p>
+<p>Convert frequency to control-voltage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>[Hz] Frequency </td></tr>
-    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">freq_zero_volt</td><td>[Hz] Desired frequency at 0V </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[V] Control voltage </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>float [V] Control-voltage </dd></dl>
 
 </div>
 </div>
-<a id="ac61766dd8f92ea57357cea101b87599f" name="ac61766dd8f92ea57357cea101b87599f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac61766dd8f92ea57357cea101b87599f">&#9670;&#160;</a></span>to_volt() <span class="overload">[7/7]</span></h2>
+<a id="aec5c28c00cfb727466b2db81b61d09db" name="aec5c28c00cfb727466b2db81b61d09db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec5c28c00cfb727466b2db81b61d09db">&#9670;&#160;</a></span>to_volt() <span class="overload">[7/7]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::to_volt </td>
+          <td class="memname">FloatType <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::to_volt </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>freq</em></span></td><td>)</td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>freq</em></span></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Convert frequency to voltage as tuned. </p>
+<p>Convert frequency to control-voltage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>[Hz] Frequency </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>[V] Control voltage </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>FloatType [V] Control-voltage </dd></dl>
 
 </div>
 </div>
-<a id="af2189d716314728c9c9dbcd73fbbdc00" name="af2189d716314728c9c9dbcd73fbbdc00"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2189d716314728c9c9dbcd73fbbdc00">&#9670;&#160;</a></span>tune()</h2>
+<a id="a98f45d8c055eb98a4c0c98afb81fb572" name="a98f45d8c055eb98a4c0c98afb81fb572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98f45d8c055eb98a4c0c98afb81fb572">&#9670;&#160;</a></span>tune()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename FloatType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; T &gt;::tune </td>
+          <td class="memname">void <a class="el" href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a>&lt; FloatType &gt;::tune </td>
           <td>(</td>
-          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>_freq_zero_volt</em></span></td><td>)</td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>_freq_zero_volt</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set zero-volt-frequency. </p>
+<p>Tune the conversion. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">_freq_zero_volt</td><td>[Hz] Frequency at 0V </td></tr>
+    <tr><td class="paramname">_freq_zero_volt</td><td>[Hz] Frequency at 0V control-voltage </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cc_source.html#l00013">13</a> of file <a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   13</span>                                          {</div>
-<div class="line"><span class="lineno">   14</span>  freq_zero_volt = _freq_zero_volt;</div>
-<div class="line"><span class="lineno">   15</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_volt_per_oct_8cpp_source.html#l00014">14</a> of file <a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   14</span>                                                          {</div>
+<div class="line"><span class="lineno">   15</span>  freq_zero_volt = _freq_zero_volt;</div>
+<div class="line"><span class="lineno">   16</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/butch/dev/plugins/xdsp/src/xdsp/<a class="el" href="_volt_per_oct_8h_source.html">VoltPerOct.h</a></li>
-<li>/Users/butch/dev/plugins/xdsp/src/xdsp/<a class="el" href="_volt_per_oct_8cc_source.html">VoltPerOct.cc</a></li>
+<li>/Users/butch/dev/plugins/synx/external/XDSP/src/xdsp/cv/<a class="el" href="_volt_per_oct_8h_source.html">VoltPerOct.h</a></li>
+<li>/Users/butch/dev/plugins/synx/external/XDSP/src/xdsp/cv/<a class="el" href="_volt_per_oct_8cpp_source.html">VoltPerOct.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

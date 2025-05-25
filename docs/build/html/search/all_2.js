@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fsample_0',['get_sample',['../classxdsp_1_1noise_1_1_linear_congruential_generator.html#aff46bb775ed01da6add2f9465b0821e8',1,'xdsp::noise::LinearCongruentialGenerator']]]
+  ['freq_5fzero_5fvolt_5fdefault_0',['FREQ_ZERO_VOLT_DEFAULT',['../namespacexdsp_1_1cv.html#ab8d1921594e580f8b7dfec5672bd6967',1,'xdsp::cv']]]
 ];

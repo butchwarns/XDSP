@@ -140,6 +140,16 @@ Functions</h2></td></tr>
 <tr class="memdesc:a698c41e9b5eabbbdaac80bcb8a48b91a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linearly scale from bipolar to unipolar range.<br  />
  (E.g., [-1.0, 1.0] will be mapped to [0.0, 1.0].)  <br /></td></tr>
 <tr class="separator:a698c41e9b5eabbbdaac80bcb8a48b91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66bb7d55c306e1eae3355391d9b45e1" id="r_af66bb7d55c306e1eae3355391d9b45e1"><td class="memTemplParams" colspan="2">template&lt;typename FloatType &gt; </td></tr>
+<tr class="memitem:af66bb7d55c306e1eae3355391d9b45e1"><td class="memTemplItemLeft" align="right" valign="top">FloatType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a> (FloatType val_norm, FloatType skew)</td></tr>
+<tr class="memdesc:af66bb7d55c306e1eae3355391d9b45e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Skew the unit interval.  <br /></td></tr>
+<tr class="separator:af66bb7d55c306e1eae3355391d9b45e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a593498f9c3c94629d91f48533cd23538" id="r_a593498f9c3c94629d91f48533cd23538"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a593498f9c3c94629d91f48533cd23538"><td class="memTemplItemLeft" align="right" valign="top">double&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a593498f9c3c94629d91f48533cd23538">skew</a> (double val, double skew)</td></tr>
+<tr class="separator:a593498f9c3c94629d91f48533cd23538"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eecc320ef6050abaca46e57a9d61b77" id="r_a4eecc320ef6050abaca46e57a9d61b77"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
+<tr class="memitem:a4eecc320ef6050abaca46e57a9d61b77"><td class="memTemplItemLeft" align="right" valign="top">float&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a4eecc320ef6050abaca46e57a9d61b77">skew</a> (float val, float skew)</td></tr>
+<tr class="separator:a4eecc320ef6050abaca46e57a9d61b77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A collection of scaling and range conversion functions. </p>
@@ -450,6 +460,126 @@ template&lt;typename T &gt; </div>
 <div class="line"><span class="lineno">   74</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp</a>(in, in_lo, in_hi, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
 <div class="line"><span class="lineno">   75</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="a593498f9c3c94629d91f48533cd23538" name="a593498f9c3c94629d91f48533cd23538"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a593498f9c3c94629d91f48533cd23538">&#9670;&#160;</a></span>skew() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double xdsp::scaling::skew </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>skew</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00135">135</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  135</span>                                            {</div>
+<div class="line"><span class="lineno">  136</span>  <span class="keywordflow">return</span> pow(val, 1.0 / skew);</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4eecc320ef6050abaca46e57a9d61b77" name="a4eecc320ef6050abaca46e57a9d61b77"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4eecc320ef6050abaca46e57a9d61b77">&#9670;&#160;</a></span>skew() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float xdsp::scaling::skew </td>
+          <td>(</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>val</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>skew</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00140">140</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  140</span>                                         {</div>
+<div class="line"><span class="lineno">  141</span>  <span class="keywordflow">return</span> powf(val, 1.0f / skew);</div>
+<div class="line"><span class="lineno">  142</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="af66bb7d55c306e1eae3355391d9b45e1" name="af66bb7d55c306e1eae3355391d9b45e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66bb7d55c306e1eae3355391d9b45e1">&#9670;&#160;</a></span>skew() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename FloatType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FloatType xdsp::scaling::skew </td>
+          <td>(</td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>val_norm</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">FloatType</td>          <td class="paramname"><span class="paramname"><em>skew</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Skew the unit interval. </p>
+<p>skew = 1.0 gives a linear map skew in [0.0, 1.0[ gives more resolution in the lower range skew in [1.0, INF[ gives more resolution in the upper range</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">FloatType</td><td>(float or double) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val_norm</td><td>Value in [0.0, 1.0] </td></tr>
+    <tr><td class="paramname">skew</td><td>Skew factor </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Skewed value in [0.0, 1.0] </dd></dl>
+
 </div>
 </div>
 <a id="a5971c4e2e7be2c0a096f968d6671cfaf" name="a5971c4e2e7be2c0a096f968d6671cfaf"></a>
