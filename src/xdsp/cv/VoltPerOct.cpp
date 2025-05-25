@@ -4,55 +4,55 @@ namespace xdsp::cv {
 
 template <typename FloatType>
 VoltPerOct<FloatType>::VoltPerOct()
-    : zero_volt_freq((FloatType)ZERO_VOLT_FREQ_DEFAULT) {}
+    : freq_zero_volt((FloatType)FREQ_ZERO_VOLT_DEFAULT) {}
 
 template <typename FloatType>
-VoltPerOct<FloatType>::VoltPerOct(FloatType _zero_volt_freq)
-    : zero_volt_freq(_zero_volt_freq) {}
+VoltPerOct<FloatType>::VoltPerOct(FloatType _freq_zero_volt)
+    : freq_zero_volt(_freq_zero_volt) {}
 
 template <typename FloatType>
-void VoltPerOct<FloatType>::tune(FloatType _zero_volt_freq) {
-  zero_volt_freq = _zero_volt_freq;
+void VoltPerOct<FloatType>::tune(FloatType _freq_zero_volt) {
+  freq_zero_volt = _freq_zero_volt;
 }
 
 template <>
 float VoltPerOct<float>::to_freq(float volt) const {
-  return zero_volt_freq * powf(2.0f, volt);
+  return freq_zero_volt * powf(2.0f, volt);
 }
 
 template <>
 double VoltPerOct<double>::to_freq(double volt) const {
-  return zero_volt_freq * pow(2.0, volt);
+  return freq_zero_volt * pow(2.0, volt);
 }
 
 template <>
 float VoltPerOct<float>::to_volt(float freq) const {
-  return log2f(freq / zero_volt_freq);
+  return log2f(freq / freq_zero_volt);
 }
 
 template <>
 double VoltPerOct<double>::to_volt(double freq) const {
-  return log2(freq / zero_volt_freq);
+  return log2(freq / freq_zero_volt);
 }
 
 template <>
-float VoltPerOct<float>::to_freq(float volt, float zero_volt_freq) {
-  return zero_volt_freq * powf(2.0f, volt);
+float VoltPerOct<float>::to_freq(float volt, float freq_zero_volt) {
+  return freq_zero_volt * powf(2.0f, volt);
 }
 
 template <>
-double VoltPerOct<double>::to_freq(double volt, double zero_volt_freq) {
-  return zero_volt_freq * pow(2.0, volt);
+double VoltPerOct<double>::to_freq(double volt, double freq_zero_volt) {
+  return freq_zero_volt * pow(2.0, volt);
 }
 
 template <>
-float VoltPerOct<float>::to_volt(float freq, float zero_volt_freq) {
-  return log2f(freq / zero_volt_freq);
+float VoltPerOct<float>::to_volt(float freq, float freq_zero_volt) {
+  return log2f(freq / freq_zero_volt);
 }
 
 template <>
-double VoltPerOct<double>::to_volt(double freq, double zero_volt_freq) {
-  return log2(freq / zero_volt_freq);
+double VoltPerOct<double>::to_volt(double freq, double freq_zero_volt) {
+  return log2(freq / freq_zero_volt);
 }
 
 template class VoltPerOct<float>;
