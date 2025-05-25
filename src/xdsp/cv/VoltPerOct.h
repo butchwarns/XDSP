@@ -37,6 +37,10 @@ class VoltPerOct {
    */
   explicit VoltPerOct(FloatType _freq_zero_volt);
 
+  /**
+   * @brief Default destructor
+   *
+   */
   ~VoltPerOct() = default;
 
   /**
