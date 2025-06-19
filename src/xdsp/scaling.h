@@ -119,8 +119,8 @@ inline T to_unipolar(T bipolar) {
  * @brief Skew the unit interval
  *
  * skew = 1.0 gives a linear map
- * skew in [0.0, 1.0[ gives more resolution in the lower range
- * skew in [1.0, INF[ gives more resolution in the upper range
+ * skew in [0.0, 1.0[ gives more resolution in the upper range
+ * skew in [1.0, INF[ gives more resolution in the lower range
  *
  * @tparam FloatType (float or double)
  * @param val_norm Value in [0.0, 1.0]
@@ -139,6 +139,30 @@ inline double skew(double val, double skew) {
 template <>
 inline float skew(float val, float skew) {
   return powf(val, 1.0f / skew);
+}
+
+/**
+ * @brief Undo skew on the unit interval
+ *
+ *  Inverse of skew() function
+ *
+ * @tparam FloatType (float or double)
+ * @param val_norm_skewed Skewed value in [0.0, 1.0]
+ * @param skew Skew factor
+ * @return Unskewed value in [0.0, 1.0]
+ */
+
+template <typename FloatType>
+inline FloatType unskew(FloatType val_norm, FloatType skew);
+
+template <>
+inline double unskew(double val, double skew) {
+  return pow(val, skew);
+}
+
+template <>
+inline float unskew(float val, float skew) {
+  return powf(val, skew);
 }
 
 }  // namespace xdsp::scaling
