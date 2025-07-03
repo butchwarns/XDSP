@@ -1,5 +1,6 @@
 #pragma once
 
+#include <xdsp/denormals.h>
 #include <xdsp/scaling.h>
 
 namespace xdsp::envelope {
@@ -32,7 +33,7 @@ class Adsr {
 
   inline void set_gate(bool _gate) { gate = _gate; }
 
-  inline double process() {
+  inline double process_volt() {
     double output{0.0};
     double counter_inv{0.0};
 
@@ -77,6 +78,14 @@ class Adsr {
 
     transition_state();
     out_prev = output;
+
+    return output;  // Return output in [0.0, 8.0] V
+  }
+
+  inline double process() {
+    double output = process_volt();
+    output /= VOLT_OUT_PEAK;  // Normalize to [0.0, 1.0]
+    xdsp::denormals::flush(&output);
 
     return output;
   }
