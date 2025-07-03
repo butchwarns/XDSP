@@ -14,7 +14,7 @@ namespace xdsp::denormals {
  * @param val Value to flush
  */
 static void flush(double* val) {
-  if (abs(*val) < std::numeric_limits<double>::min()) {
+  if (abs(*val) < std::numeric_limits<float>::min()) {
     *val = 0.0;
   }
 }
