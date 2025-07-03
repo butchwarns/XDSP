@@ -29,6 +29,11 @@ class OscBasic {
    */
   void set_freq(double freq_hz);
 
+  /**
+   * @brief Process one sample of the oscillator
+   *
+   * @return double Next output sample
+   */
   double process();
 
  private:
