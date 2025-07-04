@@ -1,5 +1,5 @@
-#ifndef LERP_H
-#define LERP_H
+#ifndef SCALING_H
+#define SCALING_H
 
 #include <cmath>
 
@@ -167,4 +167,4 @@ inline float unskew(float val, float skew) {
 
 }  // namespace xdsp::scaling
 
-#endif  // LERP_H
+#endif  // SCALING_H
