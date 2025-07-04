@@ -23,11 +23,25 @@ class OscBasic {
   void reset(double sample_rate);
 
   /**
-   * @brief Set oscillator frequency
+   * @brief Set oscillator base frequency
    *
    * @param freq_hz [Hz] Frequency
    */
   void set_freq(double freq_hz);
+
+  /**
+   * @brief Detune the oscillator by cents
+   *
+   * @param cents Detune amount in cents, relative to base frequency
+   */
+  void set_detune(int cents);
+
+  /**
+   * @brief Detune the oscillator by octaves
+   *
+   * @param octave Detune amount in octaves, relative to base frequency
+   */
+  void set_octave(int octave);
 
   /**
    * @brief Process one sample of the oscillator
@@ -38,16 +52,40 @@ class OscBasic {
 
  private:
   /**
+   * @brief Update output frequency based on base frequency, detune, and octave.
+   *
+   */
+  void update_frequency();
+
+  /**
    * @brief Sample rate
    *
    */
   double sample_rate;
 
   /**
-   * @brief Output frequency
+   * @brief Output frequency, including detune and octave
    *
    */
   double frequency;
+
+  /**
+   * @brief Oscillator base frequency
+   *
+   */
+  double frequency_base;
+
+  /**
+   * @brief Detune amount in cents
+   *
+   */
+  int detune;
+
+  /**
+   * @brief Detune amount in octaves
+   *
+   */
+  int octave;
 
   /**
    * @brief Bipolar modulo counter for the oscillator core
