@@ -6,6 +6,11 @@
  */
 namespace xdsp::oscillator {
 
+enum class OscBasicWaveform {
+  SAW,
+  SQUARE,
+};
+
 /**
  * @brief Naive implementation of an oscillator without any antialiasing
  *
@@ -42,6 +47,13 @@ class OscBasic {
    * @param octave Detune amount in octaves, relative to base frequency
    */
   void set_octave(int octave);
+
+  /**
+   * @brief Set output waveform
+   *
+   * @param waveform Waveform to use
+   */
+  void set_waveform(OscBasicWaveform waveform);
 
   /**
    * @brief Process one sample of the oscillator
@@ -86,6 +98,12 @@ class OscBasic {
    *
    */
   int octave;
+
+  /**
+   * @brief Current output waveform
+   *
+   */
+  OscBasicWaveform waveform;
 
   /**
    * @brief Bipolar modulo counter for the oscillator core
