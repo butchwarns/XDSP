@@ -1,6 +1,10 @@
 #ifndef SMOOTH_LIN
 #define SMOOTH_LIN
 
+/**
+ * @brief Parameter smoothing
+ *
+ */
 namespace xdsp::smoothing {
 
 template <typename FloatType>
@@ -19,7 +23,8 @@ class SmoothLin {
   /**
    * @brief Set time constant
    *
-   * Time it takes output to reach target
+   * Time it takes output to reach target.
+   * (Needs to be set before target value.)
    *
    * @param time_s [s] Time constant
    */

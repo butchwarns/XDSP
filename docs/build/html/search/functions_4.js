@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reset_0',['reset',['../classxdsp_1_1oscillator_1_1_osc_basic.html#a18691538960c06410b85cc0f8bf53b8a',1,'xdsp::oscillator::OscBasic']]]
+  ['midi_5fto_5ffreq_0',['midi_to_freq',['../namespacexdsp_1_1tuning.html#ac3dc5399fab485cb1c285ba8c0884a7c',1,'xdsp::tuning']]]
 ];
