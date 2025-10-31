@@ -1,10 +1,4 @@
 var searchData=
 [
-  ['xdsp_0',['XDSP',['../index.html',1,'']]],
-  ['xdsp_3a_3aconsts_1',['consts',['../namespacexdsp_1_1consts.html',1,'xdsp']]],
-  ['xdsp_3a_3acv_2',['cv',['../namespacexdsp_1_1cv.html',1,'xdsp']]],
-  ['xdsp_3a_3adecibel_3',['decibel',['../namespacexdsp_1_1decibel.html',1,'xdsp']]],
-  ['xdsp_3a_3anoise_4',['noise',['../namespacexdsp_1_1noise.html',1,'xdsp']]],
-  ['xdsp_3a_3aoscillator_5',['oscillator',['../namespacexdsp_1_1oscillator.html',1,'xdsp']]],
-  ['xdsp_3a_3ascaling_6',['scaling',['../namespacexdsp_1_1scaling.html',1,'xdsp']]]
+  ['voltperoct_0',['VoltPerOct',['../classxdsp_1_1cv_1_1_volt_per_oct.html',1,'xdsp::cv::VoltPerOct&lt; FloatType &gt;'],['../classxdsp_1_1cv_1_1_volt_per_oct.html#a71664dbe3b796b942ab18531d4462bd8',1,'xdsp::cv::VoltPerOct::VoltPerOct()'],['../classxdsp_1_1cv_1_1_volt_per_oct.html#ace668c557b8f0adeeee9c9fad292cb41',1,'xdsp::cv::VoltPerOct::VoltPerOct(FloatType _freq_zero_volt)']]]
 ];
