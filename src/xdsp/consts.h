@@ -30,18 +30,6 @@ constexpr double PI_TWO = PI / 2.0;
 constexpr double SQRT_2 =
     1.4142135623730950488016887242096980785696718753769480731766797379;
 
-/**
- * @brief Minimum filter cutoff frequency (approx. lower threshold of human
- * hearing)
- */
-constexpr double MIN_FILTER_FREQ = 20.0;
-
-/**
- * @brief Maximum filter cutoff frequency (approx. upper threshold of human
- * hearing)
- */
-constexpr double MAX_FILTER_FREQ = 20480.0;
-
 }  // namespace xdsp::consts
 
 #endif  // CONSTS_H
