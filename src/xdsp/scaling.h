@@ -1,9 +1,9 @@
 #ifndef SCALING_H
 #define SCALING_H
 
-#include <cmath>
+#include <xdsp/constants.h>
 
-#include "constants.h"
+#include <cmath>
 
 /**
  * @brief A collection of scaling and range conversion functions.

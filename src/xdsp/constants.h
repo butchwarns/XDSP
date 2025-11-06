@@ -1,5 +1,4 @@
-#ifndef CONST_H
-#define CONST_H
+#pragma once
 
 #include <cmath>
 
@@ -31,5 +30,3 @@ constexpr double SQRT_2 =
     1.4142135623730950488016887242096980785696718753769480731766797379;
 
 }  // namespace xdsp::constants
-
-#endif  // CONSTANTS_H
