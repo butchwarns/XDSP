@@ -20,6 +20,11 @@ constexpr double PI =
 constexpr double TWO_PI = 2.0 * PI;
 
 /**
+ * @brief @f$ \frac{\pi}{2} @f$
+ */
+constexpr double PI_TWO = PI / 2.0;
+
+/**
  * @brief @f$ \sqrt{2} @f$
  */
 constexpr double SQRT_2 =
