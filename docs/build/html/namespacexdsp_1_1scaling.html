@@ -202,12 +202,12 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Scaled value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00057">57</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                              {</div>
-<div class="line"><span class="lineno">   59</span>  <span class="keyword">const</span> T in_norm = (val - in_lo) / (in_hi - in_lo);</div>
-<div class="line"><span class="lineno">   60</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#ae24d7b61ea046fddc87ec3bccd2b86ae">lerp_unipolar&lt;T&gt;</a>(in_norm, out_lo, out_hi);</div>
-<div class="line"><span class="lineno">   61</span>}</div>
-<div class="ttc" id="anamespacexdsp_1_1scaling_html_ae24d7b61ea046fddc87ec3bccd2b86ae"><div class="ttname"><a href="#ae24d7b61ea046fddc87ec3bccd2b86ae">xdsp::scaling::lerp_unipolar</a></div><div class="ttdeci">T lerp_unipolar(const T in, const T out_lo, const T out_hi)</div><div class="ttdoc">Linearly scales value from [0.0, 1.0] to a given output range.  (The &quot;lo&quot; bound can be higher than th...</div><div class="ttdef"><b>Definition</b> <a href="scaling_8h_source.html#l00040">scaling.h:40</a></div></div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00056">56</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                              {</div>
+<div class="line"><span class="lineno">   58</span>  <span class="keyword">const</span> T in_norm = (val - in_lo) / (in_hi - in_lo);</div>
+<div class="line"><span class="lineno">   59</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#ae24d7b61ea046fddc87ec3bccd2b86ae">lerp_unipolar&lt;T&gt;</a>(in_norm, out_lo, out_hi);</div>
+<div class="line"><span class="lineno">   60</span>}</div>
+<div class="ttc" id="anamespacexdsp_1_1scaling_html_ae24d7b61ea046fddc87ec3bccd2b86ae"><div class="ttname"><a href="#ae24d7b61ea046fddc87ec3bccd2b86ae">xdsp::scaling::lerp_unipolar</a></div><div class="ttdeci">T lerp_unipolar(const T in, const T out_lo, const T out_hi)</div><div class="ttdoc">Linearly scales value from [0.0, 1.0] to a given output range.  (The &quot;lo&quot; bound can be higher than th...</div><div class="ttdef"><b>Definition</b> <a href="scaling_8h_source.html#l00039">scaling.h:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -263,11 +263,11 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mapped value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00024">24</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   24</span>                                                                  {</div>
-<div class="line"><span class="lineno">   25</span>  <span class="keywordflow">return</span> (in + <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0)) / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * (out_hi - out_lo) +</div>
-<div class="line"><span class="lineno">   26</span>         out_lo;</div>
-<div class="line"><span class="lineno">   27</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00023">23</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                                                                  {</div>
+<div class="line"><span class="lineno">   24</span>  <span class="keywordflow">return</span> (in + <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0)) / <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(2.0) * (out_hi - out_lo) +</div>
+<div class="line"><span class="lineno">   25</span>         out_lo;</div>
+<div class="line"><span class="lineno">   26</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -323,10 +323,10 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mapped value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00040">40</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                                                   {</div>
-<div class="line"><span class="lineno">   41</span>  <span class="keywordflow">return</span> in * (out_hi - out_lo) + out_lo;</div>
-<div class="line"><span class="lineno">   42</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00039">39</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                                   {</div>
+<div class="line"><span class="lineno">   40</span>  <span class="keywordflow">return</span> in * (out_hi - out_lo) + out_lo;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -381,11 +381,11 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Normalized value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00087">87</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                                                                     {</div>
-<div class="line"><span class="lineno">   88</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp</a>(in, in_lo, in_hi, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
-<div class="line"><span class="lineno">   89</span>}</div>
-<div class="ttc" id="anamespacexdsp_1_1scaling_html_a923193e66b0daea31e3cd257a4ea54b5"><div class="ttname"><a href="#a923193e66b0daea31e3cd257a4ea54b5">xdsp::scaling::lerp</a></div><div class="ttdeci">T lerp(const T val, const T in_lo, const T in_hi, const T out_lo, const T out_hi)</div><div class="ttdoc">Linearly scales value from input range to output range.  (The &quot;lo&quot; bounds can be higher than the &quot;hi&quot;...</div><div class="ttdef"><b>Definition</b> <a href="scaling_8h_source.html#l00057">scaling.h:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00086">86</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                                     {</div>
+<div class="line"><span class="lineno">   87</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp</a>(in, in_lo, in_hi, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
+<div class="line"><span class="lineno">   88</span>}</div>
+<div class="ttc" id="anamespacexdsp_1_1scaling_html_a923193e66b0daea31e3cd257a4ea54b5"><div class="ttname"><a href="#a923193e66b0daea31e3cd257a4ea54b5">xdsp::scaling::lerp</a></div><div class="ttdeci">T lerp(const T val, const T in_lo, const T in_hi, const T out_lo, const T out_hi)</div><div class="ttdoc">Linearly scales value from input range to output range.  (The &quot;lo&quot; bounds can be higher than the &quot;hi&quot;...</div><div class="ttdef"><b>Definition</b> <a href="scaling_8h_source.html#l00056">scaling.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -440,10 +440,10 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Normalised value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00073">73</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                                                      {</div>
-<div class="line"><span class="lineno">   74</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp</a>(in, in_lo, in_hi, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00072">72</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                                                      {</div>
+<div class="line"><span class="lineno">   73</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp</a>(in, in_lo, in_hi, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -476,10 +476,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00135">135</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  135</span>                                            {</div>
-<div class="line"><span class="lineno">  136</span>  <span class="keywordflow">return</span> pow(val, 1.0 / <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
-<div class="line"><span class="lineno">  137</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00134">134</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                                            {</div>
+<div class="line"><span class="lineno">  135</span>  <span class="keywordflow">return</span> pow(val, 1.0 / <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
+<div class="line"><span class="lineno">  136</span>}</div>
 <div class="ttc" id="anamespacexdsp_1_1scaling_html_af66bb7d55c306e1eae3355391d9b45e1"><div class="ttname"><a href="#af66bb7d55c306e1eae3355391d9b45e1">xdsp::scaling::skew</a></div><div class="ttdeci">FloatType skew(FloatType val_norm, FloatType skew)</div><div class="ttdoc">Skew the unit interval.</div></div>
 </div><!-- fragment -->
 </div>
@@ -513,10 +513,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00140">140</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  140</span>                                         {</div>
-<div class="line"><span class="lineno">  141</span>  <span class="keywordflow">return</span> powf(val, 1.0f / <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
-<div class="line"><span class="lineno">  142</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00139">139</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                                         {</div>
+<div class="line"><span class="lineno">  140</span>  <span class="keywordflow">return</span> powf(val, 1.0f / <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
+<div class="line"><span class="lineno">  141</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -609,10 +609,10 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Mapped bipolar value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00100">100</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  100</span>                                {</div>
-<div class="line"><span class="lineno">  101</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#ae24d7b61ea046fddc87ec3bccd2b86ae">lerp_unipolar&lt;T&gt;</a>(unipolar, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
-<div class="line"><span class="lineno">  102</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00099">99</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   99</span>                                {</div>
+<div class="line"><span class="lineno">  100</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#ae24d7b61ea046fddc87ec3bccd2b86ae">lerp_unipolar&lt;T&gt;</a>(unipolar, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
+<div class="line"><span class="lineno">  101</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -657,11 +657,11 @@ template&lt;typename T&gt; </div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Unipolar value </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00113">113</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  113</span>                                {</div>
-<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp&lt;T&gt;</a>(bipolar, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0),</div>
-<div class="line"><span class="lineno">  115</span>                 <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
-<div class="line"><span class="lineno">  116</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00112">112</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  112</span>                                {</div>
+<div class="line"><span class="lineno">  113</span>  <span class="keywordflow">return</span> <a class="code hl_function" href="#a923193e66b0daea31e3cd257a4ea54b5">lerp&lt;T&gt;</a>(bipolar, <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(-1.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0),</div>
+<div class="line"><span class="lineno">  114</span>                 <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(0.0), <span class="keyword">static_cast&lt;</span>T<span class="keyword">&gt;</span>(1.0));</div>
+<div class="line"><span class="lineno">  115</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -694,10 +694,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00159">159</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  159</span>                                              {</div>
-<div class="line"><span class="lineno">  160</span>  <span class="keywordflow">return</span> pow(val, <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
-<div class="line"><span class="lineno">  161</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00158">158</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  158</span>                                              {</div>
+<div class="line"><span class="lineno">  159</span>  <span class="keywordflow">return</span> pow(val, <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
+<div class="line"><span class="lineno">  160</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -730,10 +730,10 @@ template&lt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00164">164</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  164</span>                                           {</div>
-<div class="line"><span class="lineno">  165</span>  <span class="keywordflow">return</span> powf(val, <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
-<div class="line"><span class="lineno">  166</span>}</div>
+<p class="definition">Definition at line <a class="el" href="scaling_8h_source.html#l00163">163</a> of file <a class="el" href="scaling_8h_source.html">scaling.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  163</span>                                           {</div>
+<div class="line"><span class="lineno">  164</span>  <span class="keywordflow">return</span> powf(val, <a class="code hl_function" href="#af66bb7d55c306e1eae3355391d9b45e1">skew</a>);</div>
+<div class="line"><span class="lineno">  165</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
