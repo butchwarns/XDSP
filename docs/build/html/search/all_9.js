@@ -8,5 +8,5 @@ var searchData=
   ['set_5fwaveform_5',['set_waveform',['../classxdsp_1_1oscillator_1_1_osc_basic.html#a23b9ccb2b9aebda633f03b51fd7a132f',1,'xdsp::oscillator::OscBasic']]],
   ['skew_6',['skew',['../namespacexdsp_1_1scaling.html#af66bb7d55c306e1eae3355391d9b45e1',1,'xdsp::scaling']]],
   ['smoothlin_7',['SmoothLin',['../classxdsp_1_1smoothing_1_1_smooth_lin.html',1,'xdsp::smoothing']]],
-  ['sqrt_5f2_8',['SQRT_2',['../namespacexdsp_1_1consts.html#ab0cae74b7e275e1dfa5948ba215e0440',1,'xdsp::consts']]]
+  ['sqrt_5f2_8',['SQRT_2',['../namespacexdsp_1_1constants.html#a01a4d0866a5d37b1b0f9ea41c141bd78',1,'xdsp::constants']]]
 ];

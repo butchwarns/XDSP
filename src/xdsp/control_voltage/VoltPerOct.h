@@ -1,23 +1,33 @@
 #pragma once
 
-#include "../consts.h"
+#include <xdsp/tuning.h>
 
 /**
  * @brief Control-voltage conversions
  *
  */
-namespace xdsp::cv {
+namespace xdsp::control_voltage {
+
+/**
+ * @brief @f$ 20 \mbox{Hz} @f$ Default minimum filter frequency (approx. lower
+ * threshold of human hearing)
+ *
+ */
+constexpr double MIN_FILTER_FREQ_DEFAULT = 20.0;
 
 /**
  * @brief Default tuning
  *
- * +-5V CV / 10 octave range (20Hz to 20.48kHz)
+ * Tune @f$ [-5 \mbox{V}, +5 \mbox{V}] @f$ control voltage to @f$ [20
+ * \mbox{Hz}, 20.48
+ * \mbox{kHz}] @f$ (10 octave range)
  *
  */
-const double FREQ_ZERO_VOLT_DEFAULT = consts::MIN_FILTER_FREQ * pow(2.0, 5.0);
+const double FREQ_ZERO_VOLT_DEFAULT =
+    xdsp::tuning::detune_octave(MIN_FILTER_FREQ_DEFAULT, 5);
 
 /**
- * @brief Volt-per-octave <-> frequency conversion class
+ * @brief Volt-per-octave @f$ \leftrightarrow @f$ frequency conversion class
  *
  * @tparam FloatType Floating-point type (float or double)
  */
@@ -110,4 +120,4 @@ class VoltPerOct {
   FloatType freq_zero_volt;
 };
 
-}  // namespace xdsp::cv
+}  // namespace xdsp::control_voltage

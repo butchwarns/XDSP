@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>XDSP: /Users/butchwarns/dev/plugins/tool/external/XDSP/src/xdsp/cv/VoltPerOct.cpp Source File</title>
+<title>XDSP: /Users/butchwarns/dev/plugins/tool/external/XDSP/src/xdsp/control_voltage/VoltPerOct.cpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,7 +71,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><b>src</b></li><li class="navelem"><b>xdsp</b></li><li class="navelem"><b>cv</b></li>  </ul>
+<li class="navelem"><b>src</b></li><li class="navelem"><b>xdsp</b></li><li class="navelem"><b>control_voltage</b></li>  </ul>
 </div>
 </div><!-- top -->
 <div id="doc-content">
@@ -82,79 +82,79 @@ $(function() {
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;VoltPerOct.h&quot;</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
 <div class="foldopen" id="foldopen00003" data-start="{" data-end="}">
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespacexdsp_1_1cv.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacexdsp_1_1cv.html">xdsp::cv</a> {</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="namespacexdsp_1_1control__voltage.html">    3</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespacexdsp_1_1control__voltage.html">xdsp::control_voltage</a> {</div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FloatType&gt;</div>
 <div class="foldopen" id="foldopen00006" data-start="{" data-end="}">
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a71664dbe3b796b942ab18531d4462bd8">    6</a></span><a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a71664dbe3b796b942ab18531d4462bd8">VoltPerOct&lt;FloatType&gt;::VoltPerOct</a>()</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    : freq_zero_volt((FloatType)<a class="code hl_variable" href="namespacexdsp_1_1cv.html#ab8d1921594e580f8b7dfec5672bd6967">FREQ_ZERO_VOLT_DEFAULT</a>) {}</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a6ffcb91d98056c8894caaeea3071d23a">    6</a></span><a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a6ffcb91d98056c8894caaeea3071d23a">VoltPerOct&lt;FloatType&gt;::VoltPerOct</a>()</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    : freq_zero_volt((FloatType)<a class="code hl_variable" href="namespacexdsp_1_1control__voltage.html#aedf1d354674c534d6f47f80f0843c79b">FREQ_ZERO_VOLT_DEFAULT</a>) {}</div>
 </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FloatType&gt;</div>
 <div class="foldopen" id="foldopen00010" data-start="{" data-end="}">
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classxdsp_1_1cv_1_1_volt_per_oct.html#ace668c557b8f0adeeee9c9fad292cb41">   10</a></span><a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a71664dbe3b796b942ab18531d4462bd8">VoltPerOct&lt;FloatType&gt;::VoltPerOct</a>(FloatType _freq_zero_volt)</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a9a65a7ec1a5506ea7142695b3742c2ef">   10</a></span><a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a6ffcb91d98056c8894caaeea3071d23a">VoltPerOct&lt;FloatType&gt;::VoltPerOct</a>(FloatType _freq_zero_volt)</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    : freq_zero_volt(_freq_zero_volt) {}</div>
 </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> FloatType&gt;</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a98f45d8c055eb98a4c0c98afb81fb572">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a98f45d8c055eb98a4c0c98afb81fb572">VoltPerOct&lt;FloatType&gt;::tune</a>(FloatType _freq_zero_volt) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#af87ad1127c61a8e9057f8cfd9b5cf7ac">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#af87ad1127c61a8e9057f8cfd9b5cf7ac">VoltPerOct&lt;FloatType&gt;::tune</a>(FloatType _freq_zero_volt) {</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  freq_zero_volt = _freq_zero_volt;</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>}</div>
 </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a24717fc5f647b90bade893e5f41332c1">VoltPerOct&lt;float&gt;::to_freq</a>(<span class="keywordtype">float</span> volt)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#aa587935f42afc22b0b11745f19e52321">VoltPerOct&lt;float&gt;::to_freq</a>(<span class="keywordtype">float</span> volt)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a24717fc5f647b90bade893e5f41332c1">VoltPerOct&lt;double&gt;::to_freq</a>(<span class="keywordtype">double</span> volt)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#aa587935f42afc22b0b11745f19e52321">VoltPerOct&lt;double&gt;::to_freq</a>(<span class="keywordtype">double</span> volt)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>}</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#aec5c28c00cfb727466b2db81b61d09db">VoltPerOct&lt;float&gt;::to_volt</a>(<span class="keywordtype">float</span> freq)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a78b157de5c84476981ee095351bd1238">VoltPerOct&lt;float&gt;::to_volt</a>(<span class="keywordtype">float</span> freq)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#aec5c28c00cfb727466b2db81b61d09db">VoltPerOct&lt;double&gt;::to_volt</a>(<span class="keywordtype">double</span> freq)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a78b157de5c84476981ee095351bd1238">VoltPerOct&lt;double&gt;::to_volt</a>(<span class="keywordtype">double</span> freq)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>}</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a24717fc5f647b90bade893e5f41332c1">VoltPerOct&lt;float&gt;::to_freq</a>(<span class="keywordtype">float</span> volt, <span class="keywordtype">float</span> freq_zero_volt) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#aa587935f42afc22b0b11745f19e52321">VoltPerOct&lt;float&gt;::to_freq</a>(<span class="keywordtype">float</span> volt, <span class="keywordtype">float</span> freq_zero_volt) {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordflow">return</span> freq_zero_volt * powf(2.0f, volt);</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#a24717fc5f647b90bade893e5f41332c1">VoltPerOct&lt;double&gt;::to_freq</a>(<span class="keywordtype">double</span> volt, <span class="keywordtype">double</span> freq_zero_volt) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#aa587935f42afc22b0b11745f19e52321">VoltPerOct&lt;double&gt;::to_freq</a>(<span class="keywordtype">double</span> volt, <span class="keywordtype">double</span> freq_zero_volt) {</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordflow">return</span> freq_zero_volt * pow(2.0, volt);</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#aec5c28c00cfb727466b2db81b61d09db">VoltPerOct&lt;float&gt;::to_volt</a>(<span class="keywordtype">float</span> freq, <span class="keywordtype">float</span> freq_zero_volt) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keywordtype">float</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a78b157de5c84476981ee095351bd1238">VoltPerOct&lt;float&gt;::to_volt</a>(<span class="keywordtype">float</span> freq, <span class="keywordtype">float</span> freq_zero_volt) {</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordflow">return</span> log2f(freq / freq_zero_volt);</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">template</span> &lt;&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1cv_1_1_volt_per_oct.html#aec5c28c00cfb727466b2db81b61d09db">VoltPerOct&lt;double&gt;::to_volt</a>(<span class="keywordtype">double</span> freq, <span class="keywordtype">double</span> freq_zero_volt) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keywordtype">double</span> <a class="code hl_function" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a78b157de5c84476981ee095351bd1238">VoltPerOct&lt;double&gt;::to_volt</a>(<span class="keywordtype">double</span> freq, <span class="keywordtype">double</span> freq_zero_volt) {</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordflow">return</span> log2(freq / freq_zero_volt);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classxdsp_1_1cv_1_1_volt_per_oct.html">VoltPerOct&lt;float&gt;</a>;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classxdsp_1_1cv_1_1_volt_per_oct.html">VoltPerOct&lt;double&gt;</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html">VoltPerOct&lt;float&gt;</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> <span class="keyword">class </span><a class="code hl_class" href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html">VoltPerOct&lt;double&gt;</a>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace xdsp::cv</span></div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace xdsp::control_voltage</span></div>
 </div>
-<div class="ttc" id="aclassxdsp_1_1cv_1_1_volt_per_oct_html"><div class="ttname"><a href="classxdsp_1_1cv_1_1_volt_per_oct.html">xdsp::cv::VoltPerOct</a></div><div class="ttdoc">Volt-per-octave &lt;-&gt; frequency conversion class.</div><div class="ttdef"><b>Definition</b> <a href="_volt_per_oct_8h_source.html#l00025">VoltPerOct.h:25</a></div></div>
-<div class="ttc" id="aclassxdsp_1_1cv_1_1_volt_per_oct_html_a24717fc5f647b90bade893e5f41332c1"><div class="ttname"><a href="classxdsp_1_1cv_1_1_volt_per_oct.html#a24717fc5f647b90bade893e5f41332c1">xdsp::cv::VoltPerOct::to_freq</a></div><div class="ttdeci">FloatType to_freq(FloatType volt) const</div><div class="ttdoc">Convert control-voltage to frequency.</div></div>
-<div class="ttc" id="aclassxdsp_1_1cv_1_1_volt_per_oct_html_a71664dbe3b796b942ab18531d4462bd8"><div class="ttname"><a href="classxdsp_1_1cv_1_1_volt_per_oct.html#a71664dbe3b796b942ab18531d4462bd8">xdsp::cv::VoltPerOct::VoltPerOct</a></div><div class="ttdeci">VoltPerOct()</div><div class="ttdoc">Construct with default tuning.</div><div class="ttdef"><b>Definition</b> <a href="#l00006">VoltPerOct.cpp:6</a></div></div>
-<div class="ttc" id="aclassxdsp_1_1cv_1_1_volt_per_oct_html_a98f45d8c055eb98a4c0c98afb81fb572"><div class="ttname"><a href="classxdsp_1_1cv_1_1_volt_per_oct.html#a98f45d8c055eb98a4c0c98afb81fb572">xdsp::cv::VoltPerOct::tune</a></div><div class="ttdeci">void tune(FloatType _freq_zero_volt)</div><div class="ttdoc">Tune the conversion.</div><div class="ttdef"><b>Definition</b> <a href="#l00014">VoltPerOct.cpp:14</a></div></div>
-<div class="ttc" id="aclassxdsp_1_1cv_1_1_volt_per_oct_html_aec5c28c00cfb727466b2db81b61d09db"><div class="ttname"><a href="classxdsp_1_1cv_1_1_volt_per_oct.html#aec5c28c00cfb727466b2db81b61d09db">xdsp::cv::VoltPerOct::to_volt</a></div><div class="ttdeci">FloatType to_volt(FloatType freq) const</div><div class="ttdoc">Convert frequency to control-voltage.</div></div>
-<div class="ttc" id="anamespacexdsp_1_1cv_html"><div class="ttname"><a href="namespacexdsp_1_1cv.html">xdsp::cv</a></div><div class="ttdoc">Control-voltage conversions.</div><div class="ttdef"><b>Definition</b> <a href="#l00003">VoltPerOct.cpp:3</a></div></div>
-<div class="ttc" id="anamespacexdsp_1_1cv_html_ab8d1921594e580f8b7dfec5672bd6967"><div class="ttname"><a href="namespacexdsp_1_1cv.html#ab8d1921594e580f8b7dfec5672bd6967">xdsp::cv::FREQ_ZERO_VOLT_DEFAULT</a></div><div class="ttdeci">const double FREQ_ZERO_VOLT_DEFAULT</div><div class="ttdoc">Default tuning.</div><div class="ttdef"><b>Definition</b> <a href="_volt_per_oct_8h_source.html#l00017">VoltPerOct.h:17</a></div></div>
+<div class="ttc" id="aclassxdsp_1_1control__voltage_1_1_volt_per_oct_html"><div class="ttname"><a href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html">xdsp::control_voltage::VoltPerOct</a></div><div class="ttdoc">Volt-per-octave  frequency conversion class.</div><div class="ttdef"><b>Definition</b> <a href="_volt_per_oct_8h_source.html#l00035">VoltPerOct.h:35</a></div></div>
+<div class="ttc" id="aclassxdsp_1_1control__voltage_1_1_volt_per_oct_html_a6ffcb91d98056c8894caaeea3071d23a"><div class="ttname"><a href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a6ffcb91d98056c8894caaeea3071d23a">xdsp::control_voltage::VoltPerOct::VoltPerOct</a></div><div class="ttdeci">VoltPerOct()</div><div class="ttdoc">Construct with default tuning.</div><div class="ttdef"><b>Definition</b> <a href="#l00006">VoltPerOct.cpp:6</a></div></div>
+<div class="ttc" id="aclassxdsp_1_1control__voltage_1_1_volt_per_oct_html_a78b157de5c84476981ee095351bd1238"><div class="ttname"><a href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#a78b157de5c84476981ee095351bd1238">xdsp::control_voltage::VoltPerOct::to_volt</a></div><div class="ttdeci">FloatType to_volt(FloatType freq) const</div><div class="ttdoc">Convert frequency to control-voltage.</div></div>
+<div class="ttc" id="aclassxdsp_1_1control__voltage_1_1_volt_per_oct_html_aa587935f42afc22b0b11745f19e52321"><div class="ttname"><a href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#aa587935f42afc22b0b11745f19e52321">xdsp::control_voltage::VoltPerOct::to_freq</a></div><div class="ttdeci">FloatType to_freq(FloatType volt) const</div><div class="ttdoc">Convert control-voltage to frequency.</div></div>
+<div class="ttc" id="aclassxdsp_1_1control__voltage_1_1_volt_per_oct_html_af87ad1127c61a8e9057f8cfd9b5cf7ac"><div class="ttname"><a href="classxdsp_1_1control__voltage_1_1_volt_per_oct.html#af87ad1127c61a8e9057f8cfd9b5cf7ac">xdsp::control_voltage::VoltPerOct::tune</a></div><div class="ttdeci">void tune(FloatType _freq_zero_volt)</div><div class="ttdoc">Tune the conversion.</div><div class="ttdef"><b>Definition</b> <a href="#l00014">VoltPerOct.cpp:14</a></div></div>
+<div class="ttc" id="anamespacexdsp_1_1control__voltage_html"><div class="ttname"><a href="namespacexdsp_1_1control__voltage.html">xdsp::control_voltage</a></div><div class="ttdoc">Control-voltage conversions.</div><div class="ttdef"><b>Definition</b> <a href="#l00003">VoltPerOct.cpp:3</a></div></div>
+<div class="ttc" id="anamespacexdsp_1_1control__voltage_html_aedf1d354674c534d6f47f80f0843c79b"><div class="ttname"><a href="namespacexdsp_1_1control__voltage.html#aedf1d354674c534d6f47f80f0843c79b">xdsp::control_voltage::FREQ_ZERO_VOLT_DEFAULT</a></div><div class="ttdeci">const double FREQ_ZERO_VOLT_DEFAULT</div><div class="ttdoc">Default tuning.</div><div class="ttdef"><b>Definition</b> <a href="_volt_per_oct_8h_source.html#l00026">VoltPerOct.h:26</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

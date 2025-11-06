@@ -1,6 +1,6 @@
 #include "VoltPerOct.h"
 
-namespace xdsp::cv {
+namespace xdsp::control_voltage {
 
 template <typename FloatType>
 VoltPerOct<FloatType>::VoltPerOct()
@@ -58,4 +58,4 @@ double VoltPerOct<double>::to_volt(double freq, double freq_zero_volt) {
 template class VoltPerOct<float>;
 template class VoltPerOct<double>;
 
-}  // namespace xdsp::cv
+}  // namespace xdsp::control_voltage

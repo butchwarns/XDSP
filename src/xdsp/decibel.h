@@ -1,5 +1,4 @@
-#ifndef DECIBEL_H
-#define DECIBEL_H
+#pragma once
 
 #include <cmath>
 
@@ -101,5 +100,3 @@ inline float apply(float lin, float gain, float threshold) {
 }
 
 }  // namespace xdsp::decibel
-
-#endif  // DECIBEL_H

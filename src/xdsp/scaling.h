@@ -1,9 +1,8 @@
-#ifndef SCALING_H
-#define SCALING_H
+#pragma once
+
+#include <xdsp/constants.h>
 
 #include <cmath>
-
-#include "consts.h"
 
 /**
  * @brief A collection of scaling and range conversion functions.
@@ -166,5 +165,3 @@ inline float unskew(float val, float skew) {
 }
 
 }  // namespace xdsp::scaling
-
-#endif  // SCALING_H
