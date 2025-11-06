@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <xdsp/cv/VoltPerOct.h>
+#include <xdsp/control_voltage/VoltPerOct.h>
 
 using namespace xdsp;
 
@@ -34,18 +34,18 @@ TEST_P(CVTest, VoltPerOct_conversions_static_double) {
     const auto freq1 = freq0 * 2.0;
 
     // Static conversion Volt to Hz
-    double freq0_cv =
-        xdsp::cv::VoltPerOct<double>::to_freq(volt0, freq_zero_volt_);
-    double freq1_cv =
-        xdsp::cv::VoltPerOct<double>::to_freq(volt1, freq_zero_volt_);
+    double freq0_cv = xdsp::control_voltage::VoltPerOct<double>::to_freq(
+        volt0, freq_zero_volt_);
+    double freq1_cv = xdsp::control_voltage::VoltPerOct<double>::to_freq(
+        volt1, freq_zero_volt_);
     assert_values_correct(freq0_cv, volt0, freq_zero_volt_);
     assert_values_correct(freq1_cv, volt1, freq_zero_volt_);
 
     // Static conversion Hz to Volt
-    double volt0_cv =
-        xdsp::cv::VoltPerOct<double>::to_volt(freq0, freq_zero_volt_);
-    double volt1_cv =
-        xdsp::cv::VoltPerOct<double>::to_volt(freq1, freq_zero_volt_);
+    double volt0_cv = xdsp::control_voltage::VoltPerOct<double>::to_volt(
+        freq0, freq_zero_volt_);
+    double volt1_cv = xdsp::control_voltage::VoltPerOct<double>::to_volt(
+        freq1, freq_zero_volt_);
     assert_values_correct(freq0, volt0_cv, freq_zero_volt_);
     assert_values_correct(freq1, volt1_cv, freq_zero_volt_);
   }
@@ -62,25 +62,26 @@ TEST_P(CVTest, VoltPerOct_conversions_static_float) {
     const auto freq1 = freq0 * 2.0f;
 
     // Static conversion Volt to Hz
-    float freq0_cv =
-        xdsp::cv::VoltPerOct<float>::to_freq(volt0, freq_zero_volt_f);
-    float freq1_cv =
-        xdsp::cv::VoltPerOct<float>::to_freq(volt1, freq_zero_volt_f);
+    float freq0_cv = xdsp::control_voltage::VoltPerOct<float>::to_freq(
+        volt0, freq_zero_volt_f);
+    float freq1_cv = xdsp::control_voltage::VoltPerOct<float>::to_freq(
+        volt1, freq_zero_volt_f);
     assert_values_correct(freq0_cv, volt0, freq_zero_volt_f);
     assert_values_correct(freq1_cv, volt1, freq_zero_volt_f);
 
     // Static conversion Hz to Volt
-    float volt0_cv =
-        xdsp::cv::VoltPerOct<float>::to_volt(freq0, freq_zero_volt_f);
-    float volt1_cv =
-        xdsp::cv::VoltPerOct<float>::to_volt(freq1, freq_zero_volt_f);
+    float volt0_cv = xdsp::control_voltage::VoltPerOct<float>::to_volt(
+        freq0, freq_zero_volt_f);
+    float volt1_cv = xdsp::control_voltage::VoltPerOct<float>::to_volt(
+        freq1, freq_zero_volt_f);
     assert_values_correct(freq0, volt0_cv, freq_zero_volt_f);
     assert_values_correct(freq1, volt1_cv, freq_zero_volt_f);
   }
 }
 
 TEST_P(CVTest, VoltPerOct_conversions_double) {
-  auto volt_per_oct = xdsp::cv::VoltPerOct<double>(freq_zero_volt_);
+  auto volt_per_oct =
+      xdsp::control_voltage::VoltPerOct<double>(freq_zero_volt_);
 
   for (int i = 0; i < 5; ++i) {
     // Reference values (one octave apart)
@@ -106,7 +107,8 @@ TEST_P(CVTest, VoltPerOct_conversions_double) {
 TEST_P(CVTest, VoltPerOct_conversions_float) {
   const float freq_zero_volt_f = static_cast<float>(freq_zero_volt_);
 
-  auto volt_per_oct = xdsp::cv::VoltPerOct<float>(freq_zero_volt_f);
+  auto volt_per_oct =
+      xdsp::control_voltage::VoltPerOct<float>(freq_zero_volt_f);
 
   for (int i = 0; i < 5; ++i) {
     // Reference values (one octave apart)

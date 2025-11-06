@@ -3,7 +3,7 @@
 
 #include <cmath>
 
-#include "consts.h"
+#include "constants.h"
 
 /**
  * @brief A collection of scaling and range conversion functions.

@@ -6,7 +6,7 @@
 /**
  * @brief Mathematical and other DSP-related constants
  */
-namespace xdsp::consts {
+namespace xdsp::constants {
 
 /**
  * @brief @f$ \pi @f$
@@ -30,6 +30,6 @@ constexpr double PI_TWO = PI / 2.0;
 constexpr double SQRT_2 =
     1.4142135623730950488016887242096980785696718753769480731766797379;
 
-}  // namespace xdsp::consts
+}  // namespace xdsp::constants
 
-#endif  // CONSTS_H
+#endif  // CONSTANTS_H
