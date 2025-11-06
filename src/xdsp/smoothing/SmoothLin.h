@@ -1,5 +1,4 @@
-#ifndef SMOOTH_LIN
-#define SMOOTH_LIN
+#pragma once
 
 /**
  * @brief Parameter smoothing
@@ -55,5 +54,3 @@ class SmoothLin {
 };
 
 }  // namespace xdsp::smoothing
-
-#endif  // SMOOTH_LIN

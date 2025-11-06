@@ -1,5 +1,4 @@
-#ifndef SCALING_H
-#define SCALING_H
+#pragma once
 
 #include <xdsp/constants.h>
 
@@ -166,5 +165,3 @@ inline float unskew(float val, float skew) {
 }
 
 }  // namespace xdsp::scaling
-
-#endif  // SCALING_H

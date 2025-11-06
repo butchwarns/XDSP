@@ -1,5 +1,4 @@
-#ifndef TUNING_H
-#define TUNING_H
+#pragma once
 
 #include <cmath>
 
@@ -50,5 +49,3 @@ inline double detune_octave(double frequency, int octave) {
   return frequency * pow(2.0, octave);
 }
 }  // namespace xdsp::tuning
-
-#endif  // TUNING_H
